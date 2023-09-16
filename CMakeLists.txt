@@ -34,6 +34,7 @@ if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
   # False positives
   target_compile_options(tests PRIVATE -Wno-array-bounds)
   target_compile_options(tests PRIVATE -Wno-maybe-uninitialized)
+  target_compile_options(tests PRIVATE -Wno-restrict)
   target_compile_options(tests PRIVATE -Wno-stringop-overflow -Wno-stringop-overread)
   target_compile_options(tests PRIVATE -Wno-use-after-free)
 elseif(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
